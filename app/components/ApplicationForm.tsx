@@ -18,6 +18,10 @@ export default function CorporateForm() {
         <RegionSelect selectedRegion={selectedRegion} setSelectedRegion={setSelectedRegion} />
         <DealerSelect regionId={selectedRegion} selectedDealer={selectedDealer} onDealerChange={setSelectedDealer} />
       </section>
+      <section className={styles.section}>
+        <h2 className={styles.sectionTitle}>2단계: 차량 선택</h2>
+        <VehicleList dealerId={selectedDealer} />
+      </section>
     </form>
   );
 }
