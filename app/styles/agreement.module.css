@@ -1,0 +1,59 @@
+/* ============================================
+   약관 동의 스타일
+   ============================================ */
+
+.checkboxContainer {
+  margin-bottom: 16px;
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  background-color: #fafafa;
+}
+
+.checkboxLabel {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  user-select: none;
+  margin-bottom: 8px;
+}
+
+.checkboxInput {
+  margin-right: 8px;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.checkboxText {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.requiredBadge {
+  color: red;
+  font-size: 12px;
+}
+
+.optionalBadge {
+  color: #999;
+  font-size: 12px;
+}
+
+.checkboxDescription {
+  margin: 8px 0 0 26px;
+  font-size: 12px;
+  color: #666;
+}
+
+.warningBox {
+  padding: 12px;
+  margin-top: 16px;
+  background-color: #ffebee;
+  border: 1px solid #ffcdd2;
+  border-radius: 4px;
+  color: #c62828;
+  font-size: 13px;
+}

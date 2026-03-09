@@ -1,0 +1,42 @@
+/* ============================================
+   페이지 스타일
+   ============================================ */
+
+.container {
+  min-height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.header {
+  background-color: #1976d2;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.headerTitle {
+  margin: 0 0 8px 0;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.headerSubtitle {
+  margin: 0;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.footer {
+  background-color: #f5f5f5;
+  padding: 20px;
+  text-align: center;
+  color: #666;
+  margin-top: 40px;
+  border-top: 1px solid #e0e0e0;
+}

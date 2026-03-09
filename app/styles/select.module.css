@@ -1,0 +1,37 @@
+/* ============================================
+   드롭다운 선택 스타일
+   ============================================ */
+
+.selectContainer {
+  margin-bottom: 20px;
+}
+
+.selectLabel {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.selectInput {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 2px solid #e0e0e0;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: inherit;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.selectInput:focus {
+  outline: none;
+  border-color: #1976d2;
+}
+
+.selectInput:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+  color: #999;
+}
