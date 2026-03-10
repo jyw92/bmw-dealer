@@ -4,8 +4,8 @@ import {useEffect, useState} from 'react';
 
 interface VehicleListProps {
   dealerId: number | null;
-  onVehicleSelect: (vehicle: Vehicle | null) => void;
-  selectedVehicle: Vehicle | null;
+  onVehicleSelect?: (vehicle: Vehicle | null) => void;
+  selectedVehicle?: Vehicle | null;
 }
 
 export default function VehicleList({dealerId, onVehicleSelect, selectedVehicle}: VehicleListProps) {
@@ -23,8 +23,14 @@ export default function VehicleList({dealerId, onVehicleSelect, selectedVehicle}
       try {
         const apiUrl = process.env.NEXT_PUBLIC_API_URL;
         const response = await fetch(`${apiUrl}/vehicles?dealerId=${dealerId}`);
-      } catch (error) {}
+        console.log(response.json());
+        // setVehicles();
+      } catch (error) {
+        console.error(error);
+      }
     };
+
+    fetchVehicle();
   }, [dealerId]);
 
   return (

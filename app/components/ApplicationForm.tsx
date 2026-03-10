@@ -5,6 +5,7 @@ import RegionSelect from './RegionSelect';
 import {useState} from 'react';
 import {Vehicle} from '@/types';
 import DealerSelect from './DealerSelect';
+import VehicleList from './VehicleList';
 
 export default function CorporateForm() {
   const [selectedRegion, setSelectedRegion] = useState<number | null>(null);
