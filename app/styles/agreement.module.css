@@ -57,3 +57,21 @@
   color: #c62828;
   font-size: 13px;
 }
+
+.allCheckContainer {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.allCheckText {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.divider {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 15px 0;
+}

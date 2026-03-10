@@ -48,3 +48,16 @@ export interface ApiResponse<T> {
   error?: string;
   message?: string;
 }
+
+export interface CustomerFormData {
+  companyNumber: string;
+  companyName: string;
+  name: string;
+  phone: string;
+}
+
+export interface AgreementData {
+  agreePersonal: boolean;
+  agreeMarketing: boolean;
+  agreeTerms: boolean;
+}
